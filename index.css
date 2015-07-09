@@ -1,0 +1,45 @@
+@charset "utf-8"
+/*html reset*/
+/*All*/
+.phone{
+
+}
+img{
+    width: 295px;
+    height: auto;
+}
+a{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    
+    top: 453px;
+    left: 159px;
+}
+.icon{
+    width: 45px;
+    height: 45px;    
+}
+.hand{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    
+    top: 488px;
+    left: 174px;
+}
+span{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    
+    top: 473px;
+    left: 212px;
+    font-size: 30px;
+    font-weight: bold;
+    color: orangered;
+}
