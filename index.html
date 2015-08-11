@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+		<title>Join Cafe</title>
+	</head>
+	<body>
+		<div class="ctnr">
+			<a href="#main" class="skip">메뉴건너뛰기</a>
+			<header>
+	            <h1>Join Cafe</h1>
+	            <nav class="gnb">
+	                <button type="button">
+	                    
+	                </button>
+	                <ul style="display: none;">
+						<li class="">
+							<a href="#">Cafe 찾기</a>
+							<ul>
+								<li><a href="#">장소로 찾기</a></li>
+								<li><a href="#">이름으로 찾기</a></li>
+								<li><a href="#">옵션으로 찾기</a></li>
+							</ul>
+						</li>
+						<li class="active">
+							<a href="#">고객 센터</a>
+							<ul>
+								<li><a href="#">메뉴 2-1</a></li>
+								<li><a href="#">메뉴 2-2</a></li>
+								<li><a href="#">메뉴 2-3</a></li>
+							</ul>
+						</li>
+<!--
+						<li>
+							<a href="#">메뉴 3</a>
+							<ul>
+								<li><a href="#">메뉴 3-1</a></li>
+								<li><a href="#">메뉴 3-2</a></li>
+								<li><a href="#">메뉴 3-3</a></li>
+							</ul>
+						</li>
+-->
+					</ul>
+	            </nav>
+			</header>
+			<main>
+	       		<form action="sign-up">
+                    <fieldset>
+                        <legend>일자</legend>
+                        <div class="form-group">
+                            <label for="reservationDate">몇 일날 만날까?</label>
+                            <input type="Date" id="reservationDate" class="form-control" required="" >  									
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                   <label for="reservationtime">몇 시부터 볼까?</label>
+                                    <input type="time" id="reservationtime" class="form-control" required="">
+                                </div>
+                                <div class="col-xs-6">
+                                    <label for="reservationAllTime">얼마나 있어야 할까?</label>
+                                    <input type="number" id="reservationAllTime" class="form-control" required="" placeholder="시간">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                        
+                    <fieldset>
+                        <legend>지역</legend>
+                        <span>
+                            <input id="Toggle1" type="checkbox" checked>
+                            <label for="Toggle1"><span>Power</span></label>
+                        </span>
+                        <div class="form-group">
+                           <div class="row">
+                                <div class="col-xs-6">
+                                    <label for="where">어디서 만날까?</label>
+                                    <select class="form-control" id="where">
+                                        <option value="shinchon">신촌</option>
+                                        <option value="kangnam">강남</option>
+                                        <option value="samsung">삼성</option>
+                                        <option value="ihwa">이대</option>
+                                    </select>
+                               </div>
+                               <div class="col-xs-6">
+                                    <label for="memberSize">몇 명이 보기로 했지?</label>
+                                    <input type="number" id="memberSize" class="form-control" required="" placeholder="명">
+                               </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>금액</legend>
+                        <span>
+                            <input id="Toggle2" type="checkbox" checked>
+                            <label for="Toggle2"><span>Power</span></label>
+                        </span>
+                        <div class="form-group">
+                           <div class="row">
+                                <div class="col-xs-6">
+                                    <label for="spaceCash">사용료는 어떻게 하지?</label>
+                                    <select class="form-control" id="spaceCash">
+                                        <option value="spaceCashNone">커피만 먹으면 되는 곳으로 가자</option>
+                                        <option value="spaceCashLittle">사용료 좀 내면 어때~</option>
+                                        <option value="spaceCashAnything">사용료? 상관없지 뭐~</option>
+                                    </select>
+                               </div>
+                                <div class="col-xs-6">
+                                    <label for="spaceCash">커피 가격은 어떤 곳으로 갈까?</label>
+                                    <select class="form-control" id="coffeeCash">
+                                        <option value="coffeeCash2000down">2,000원 미만</option>
+                                        <option value="coffeeCash3000down">3,000원 미만</option>
+                                        <option value="coffeeCash4000down">4,000원 미만</option>
+                                        <option value="coffeeCash4000over">4,000원 이상</option>
+                                        <option value="coffeeCashAnything">커피 가격이 문젠가 뭐...</option>
+                                    </select>
+                               </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>추가 입력 사항(옵션)</legend>
+                        <span>
+                            <input id="Toggle3" type="checkbox" checked>
+                            <label for="Toggle3"><span>Power</span></label>
+                        </span>
+                        <dl>
+                            <dd>
+                                <img src="image/wifi.png">
+                                <input type="radio" id="wifiAnything" name="wifiIs">
+                                <label for="wifiAnything">상관 없어요</label>
+                                <input type="radio" id="wifiOn" name="wifiIs">
+                                <label for="wifiOn">있어야 해요!!</label>
+                                <input type="radio" id="wifiOff" name="wifiIs">
+                                <label for="wifiOff">없어도 되요</label>
+                            </dd>
+                            <dd>
+                                <img src="image/light.png">
+                                <input type="radio" id="lightAnything" name="lightIs">
+                                <label for="lightAnything">상관 없어요</label>
+                                <input type="radio" id="lightOn" name="lightIs">
+                                <label for="lightOn">밝은게 좋아요</label>
+                                <input type="radio" id="lightOff" name="lightIs">
+                                <label for="lightOff">어두운게 좋아요</label>
+                            </dd>
+                            <dd>
+                                <img src="image/smoking.png">
+                                <input type="radio" id="smokingAnything" name="smokingIs">
+                                <label for="smokingAnything">상관 없어요</label>
+                                <input type="radio" id="smokingOn" name="smokingIs">
+                                <label for="smokingOn">있어야 해요!!</label>
+                                <input type="radio" id="smokingOff" name="smokingIs">
+                                <label for="smokingOff">없어도 되요</label>
+                            </dd>
+                            <dd>
+                                <img src="image/power.png">
+                                <input type="radio" id="powerAnything" name="powerIs">
+                                <label for="powerAnything">상관 없어요</label>
+                                <input type="radio" id="powerOnAll" name="powerIs">
+                                <label for="powerOnAll">여러 개 필요</label>
+                                <input type="radio" id="powerOnOne" name="powerIs">
+                                <label for="powerOnOne">적어도 1개</label>
+                                <input type="radio" id="powerOff" name="powerIs">
+                                <label for="powerOff">없어도 되요</label>
+                            </dd>
+                            <dd>
+                                <img src="image/toilet.png">
+                                <input type="radio" id="toiletAnything" name="toiletIs">
+                                <label for="toiletAnything">상관 없어요</label>
+                                <input type="radio" id="toiletSeparate" name="toiletIs">
+                                <label for="toiletSeparate">남/여 따로</label>
+                                <input type="radio" id="toiletpublic" name="toiletIs">
+                                <label for="toiletpublic">남/여 공용</label>
+                                <input type="radio" id="toiletOutside" name="toiletIs">
+                                <label for="toiletOutside">건물 밖에 있어요</label>
+                            </dd>
+                        </dl>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>카페 주인장에게 한마디</legend>
+                        <span>
+                            <input id="Toggle4" type="checkbox" checked>
+                            <label for="Toggle4"><span>Power</span></label>
+                        </span>
+                        <div class="form-group">
+                            <textarea class="form-control" for="forOwner" placeholder="주인장께 전하고 싶은 말씀있으세요?"></textarea> 									
+                        </div>
+                    </fieldset>
+                    <div class="submitBtn">
+                        <button class="btn btn-primary btn-sm" type="submit">카페에 전송하기</button>
+                    </div>
+                </form>
+	        </main>
+			<footer class="footer">
+				<p>Copyright © 31Nov All rights reserved.</p>
+			</footer>
+		</div>
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="index.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	</body>
+</html>
