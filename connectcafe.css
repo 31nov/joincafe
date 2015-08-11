@@ -144,6 +144,9 @@ main{
     width: 100%;
     float: left;
 }
+main :nth-child(1) >span{
+    line-height: 45px;   
+}
 fieldset{
     position: relative;
 }
@@ -194,68 +197,77 @@ input[type=checkbox]:checked + label span {
 a{
     color: #fff;
 }
-.searchingCafe{
+.reservationBtn>button{
+    width: 67px;
+    height: auto;
+    float: right;
+    line-height: 16px;
+    margin-top: -4px;
+}
+.cafeList{
     box-sizing: border-box;
     display: inline-block;
     position: relative;
     padding: 10px;
-    margin: 10px 5px;
+/*    margin: 10px 5px;*/
     
-    border: none;
+/*    border: 1px solid #000;*/
     min-height: 100px;
-    background: #777;
+    background: #8CC2F5;
     border-radius: 5px;
     
     float: none;
     width: auto;
     
 }
-.searchingCafe :nth-child(2){
+.cafeList :nth-child(2){
     color: #645643;
     text-align: center;
 }
-.searchingCafe :nth-child(3){
-    height: 40px;
-    text-align: right;
-    line-height: 50px;
+.cafeList :nth-child(3){
     color: #FFC63E;
+    margin-top: 5px;
 }
-.searchingCafe>div>div{
+.cafeList>div>img{
+    width: 100%;
+}
+table{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#optionList{
+    width: 50%;
     display: inline-block;
-    width: 80px;
-    height: 30px;
-    border: 1px solid #5e5e5e;
-    border-radius: 15px;
-    padding-right: 10px;
-    background: #fff;
+    box-sizing: border-box;
     
-    line-height: 26px;
-    color: black;
 }
-.searchingCafe img{
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    position: relative;
-    left: -13px;
+#optionList>td{
+    display: inline-block;
+    box-sizing: border-box;
 }
-.searchingCafe:hover{
-    text-decoration: none;
-    color: #ffff3e;
-    background: #EF6A69;
+#optionList :nth-child(odd){
+    box-sizing: border-box;
+    width: 20%;   
 }
+#optionList :nth-child(even){
+    box-sizing: border-box;
+    width: 80%;   
+}
+.cafeList>div>table img{
+    width: 100% !important;
+    height: auto;
+}
+
 /*******************************************************************************************/
 main>div{
     border-bottom: 1px solid #e5e5e5;
-    height: 45px;
     margin: 0 5px;
 }
 main>div>button{
     float: right;
-}
-main>div button{
     margin: 5px 0;  
-    width: 90px;
+    width: 150px;
     height: 32px;
     border-radius: 5px;
 }
@@ -390,7 +402,7 @@ header{
 }
 
 /********************************************************/
-.searchingCafe{
+.cafeList{
     display: block;
 }
 /********************************************************/
@@ -519,7 +531,7 @@ body, table, input, textarea, button{
     
 
 /********************************************************/
-.searchingCafe{
+.cafeList{
     display: inline-block;
 }
 /********************************************************/
@@ -634,7 +646,7 @@ body, table, input, textarea, button{
 	}
 
     /********************************************************/
-    .searchingCafe{
+    .cafeList{
         display: inline-block;
     }
     /********************************************************/
