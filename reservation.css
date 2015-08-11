@@ -141,6 +141,8 @@ main{
 	background: #fff;
 	min-height: 300px;
     padding: 15px;
+    width: 100%;
+    float: left;
 }
 fieldset{
     position: relative;
@@ -188,6 +190,61 @@ input[type=checkbox]:checked + label {
 input[type=checkbox]:checked + label span {
     left: 40px;
 }
+/*******************************************************************************************/
+a{
+    color: #fff;
+}
+.searchingCafe{
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    margin: 10px 5px;
+    
+    border: none;
+    min-height: 100px;
+    background: #777;
+    border-radius: 5px;
+    
+    float: none;
+    width: auto;
+    
+}
+.searchingCafe :nth-child(2){
+    color: #645643;
+    text-align: center;
+}
+.searchingCafe :nth-child(3){
+    height: 40px;
+    text-align: right;
+    line-height: 50px;
+    color: #FFC63E;
+}
+.searchingCafe>div>div{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #5e5e5e;
+    border-radius: 15px;
+    padding-right: 10px;
+    background: #fff;
+    
+    line-height: 26px;
+    color: black;
+}
+.searchingCafe img{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    position: relative;
+    left: -13px;
+}
+.searchingCafe:hover{
+    text-decoration: none;
+    color: #ffff3e;
+    background: #EF6A69;
+}
+/*******************************************************************************************/
 main>article{
 	padding: 15px;
 	/*article은 html에 여러번 사용이 가능함으로 main에 들어간 article에만 해당하게 하기 위해 main>를 넣어준다.*/
@@ -317,6 +374,13 @@ header{
 .ctnr{
 	margin: 0;
 }
+
+/********************************************************/
+.searchingCafe{
+    display: block;
+}
+/********************************************************/
+
 .skip{
 	display: none;
 }
@@ -438,6 +502,14 @@ body, table, input, textarea, button{
 	font-family: NG, sans-serif;
 }
 /*웹폰트가 용량이 금으로 폰에서 볼 경우, 부담일 수 있으니, 테블렛 이상의 크기에서만 폰트가 바뀌게 해준다.*/
+    
+
+/********************************************************/
+.searchingCafe{
+    display: inline-block;
+}
+/********************************************************/
+
 .gnb>button{
 	display: none;
 }
@@ -546,6 +618,13 @@ body, table, input, textarea, button{
 		margin-right: -180px;
 		/*그 방법은 margin을 음수값으로 주어 nav와 aside가 들어갈 공간을 만들어준다.*/
 	}
+
+    /********************************************************/
+    .searchingCafe{
+        display: inline-block;
+    }
+    /********************************************************/
+
 	/*메인 화면 좌측 정렬*/
 	.lnb, 
 	.aside{
@@ -578,7 +657,7 @@ body, table, input, textarea, button{
 	}
 	main{
 		width: 100%;
-		margin-right: -100%;
+/*		margin-right: -100%;*/
 		/*main에 플롯값이 없어서 lnb와 aside가 같은 높이가 아니어서 올라오지 않는다. 그래서...*/
 /*		float: left;*/
 		/*main을 float으로 변경 시켜준다.*/
