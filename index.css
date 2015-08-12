@@ -145,11 +145,6 @@ main{
 fieldset{
     position: relative;
 }
-fieldset>span{
-    position: absolute;
-    top: -14px;
-    right: 0;
-}
 fieldset input[type=radio] {
     margin-left: 5px;
 }
@@ -157,7 +152,6 @@ span> label {
     color: transparent;
     background: url('http://rainycafe.com/img/sprite.png') -40px 0  no-repeat;
     border-radius: 14px;
-    display: block;
     position: relative;
     text-indent: 100%;
     width: 65px; height: 29px;
@@ -165,6 +159,7 @@ span> label {
     -moz-transition: background-position .3s ease;
     cursor: pointer;
     font-size: .01em;
+    top: 12px;
 }
 
 span>input[type=checkbox] {
@@ -177,7 +172,6 @@ label span {
     border-radius: 14px;
     box-shadow: 0 1px 3px #000, 0 2px 13px #000;
     content: "";
-    display: block;
     position: absolute; top: 0; left: -1px;
     width: 28px; height: 28px;
     -webkit-transition: left .3s ease;
@@ -197,7 +191,7 @@ main>article{
 }
 main fieldset{
     border-bottom: 1px solid #e5e5e5;   
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 main legend{
     color: #0465BF;
@@ -213,6 +207,20 @@ dd img{
 form button{
     float: right;
     box-shadow: 4px 4px 11px #033472;
+}
+legend button{
+    background: #F580A4;
+    box-shadow: 2px 2px 4px #000;
+    float: none;
+    color: #2253F0;
+    width: 60px;
+    border-radius: 15px;
+    height: 23px;
+    padding: 1px;
+}
+legend button>img{
+    width: 60px;
+    height: auto;
 }
 .lnb ul,
 .aside ul{
